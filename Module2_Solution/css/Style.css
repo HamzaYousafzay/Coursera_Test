@@ -1,51 +1,45 @@
-/* base styles */
-
 * {
     box-sizing: border-box;
-    font-family: Cursive;
+    /* took font style from the w3school website https://www.w3schools.com/css/tryit.asp?filename=trycss_font_comicsansms */
+    font-family: 'Comic Sans MS', cursive;
     padding: 0px;
     margin: 0px;
-    font-size: 16px;
-}
+  }
 
 h1 {
     width: 100%;
     text-align: center;
-    font-size: 1.75em;
-    }
+    /* font-size: 1.75em; */
+}
 
 h2 {
-    width: 45%;
+    width: 30%;
     text-align: center;
     padding: 5px 0px 5px 0px;
-    border-bottom: black 1px solid;
-    border-left: black 1px solid;
+    border: 1px solid black;
     position: absolute;
-    left: 55%;
-    font-size: 1.25em;
+    left: 70%;
+    /* font-size: 1.25em; */
 }
 
 
 article {
     border: 1px solid black;
-    background-color: #d9d9d9;
+    background-color: #dbdada;
     position: relative;
 }
 
 p {
-    text-align: left;
-    margin: 50px 2% 2% 2%;
+    text-align: justify;
+    margin: 50px 3% 3% 3%;
 }
 
- 
-/* subheadings */
-
 #chicken {
-    background-color: #f59595;
+    background-color: rgb(250, 170, 170);
 }
 
 #beef {
-    background-color: #8a0101;
+    background-color: #ad0808;
     color: #ffffff;
 }
 
@@ -53,14 +47,12 @@ p {
     background-color: #f6ebb2;
 }
 
-
-/* Responsive settings */
-
+/* for Desktop Users */
 
 @media (min-width: 992px) {
 
-    #headingwrap {
-        margin: 60px 0px 80px 0px;
+    #topheading {
+        margin: 40px;
     }
 
     #col1 {
@@ -101,12 +93,12 @@ p {
 
 }
 
-
+/* For Tablet users */
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    #headingwrap {
-        margin: 40px 0px 40px 0px;
+    #topheading {
+        margin: 25px;
     }
 
     #col1 {
@@ -140,7 +132,7 @@ p {
     }
 
     #cont3 {
-        width: 96%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -148,46 +140,47 @@ p {
 
 }
 
-
+/* For mobile Users */
 @media (max-width: 767px) {
 
-    #headingwrap {
-        margin: 20px 0px 20px 0px;
+    #topheading {
+        margin: 10px;
     }
 
     #col1 {
-        width: 100%;
-        float: left;
-        margin-bottom: 18px;
+        /* width: 100%; */
+        /* float: left; */
+        margin-bottom: 20px;
     }
 
     #cont1 {
-        width: 94%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
 
 
     #col2 {
-        width: 100%;
-        float: left;
-        margin-bottom: 18px;
+        /* width: 100%; */
+        /* float: left; */
+        margin-bottom: 20px;
     }
 
     #cont2 {
-        width: 96%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
 
 
     #col3 {
-        width: 100%;
-        float: left;
+        /* width: 100%; */
+        /* float: left; */
+        margin-bottom: 10px;
     }
 
     #cont3 {
-        width: 96%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
